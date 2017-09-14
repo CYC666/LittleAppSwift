@@ -40,9 +40,13 @@ class BaseTabBarController: UITabBarController {
             ctrl?.tabBarItem.image = UIImage(named: normalImages[i])
             ctrl?.tabBarItem.selectedImage = UIImage(named: selectImages[i])
             
+            // (重要)如果不设置这个，那么初始的界面，未选中过的标签将不会显示title
+            ctrl?.tabBarItem.title = normalImages[i]
+            
             // 字体颜色
             ctrl?.tabBarItem.setTitleTextAttributes([NSForegroundColorAttributeName: UIColor.white], for:UIControlState.disabled)
             ctrl?.tabBarItem.setTitleTextAttributes([NSForegroundColorAttributeName: UIColor.white], for:UIControlState.selected)
+
         }
         
         
