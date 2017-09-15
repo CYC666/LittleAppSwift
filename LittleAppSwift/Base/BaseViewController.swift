@@ -6,6 +6,11 @@
 //  Copyright © 2017年 曹奕程. All rights reserved.
 //
 
+// ==========基础视图控制器==========
+// 所有的试图控制器都集成于这个，可以在这里统一修改属性
+
+
+
 import UIKit
 
 class BaseViewController: UIViewController {
@@ -15,7 +20,8 @@ class BaseViewController: UIViewController {
 
         view.backgroundColor = .white
         
-        
+//        // push到下一个控制器的时候，隐藏标签栏
+//        hidesBottomBarWhenPushed = true;
         
     }
 

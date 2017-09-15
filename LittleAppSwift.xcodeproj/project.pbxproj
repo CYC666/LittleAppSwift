@@ -22,6 +22,12 @@
 		9E2134CA1F6A7AD900412B66 /* SettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E2134C91F6A7AD900412B66 /* SettingViewController.swift */; };
 		9E2134CC1F6A7B7600412B66 /* CTool.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E2134CB1F6A7B7600412B66 /* CTool.swift */; };
 		9E2134CF1F6A883300412B66 /* LittleAppSwiftPCH.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E2134CE1F6A883300412B66 /* LittleAppSwiftPCH.swift */; };
+		9E81D3271F6B6B010013BC25 /* LittlePlayerCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E81D3251F6B6B010013BC25 /* LittlePlayerCell.swift */; };
+		9E81D3281F6B6B010013BC25 /* LittlePlayerCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9E81D3261F6B6B010013BC25 /* LittlePlayerCell.xib */; };
+		9E81D32D1F6B80210013BC25 /* SelectColorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E81D32B1F6B80210013BC25 /* SelectColorViewController.swift */; };
+		9E81D32E1F6B80210013BC25 /* SelectColorViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9E81D32C1F6B80210013BC25 /* SelectColorViewController.xib */; };
+		9E81D3321F6B81030013BC25 /* CityListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E81D3301F6B81030013BC25 /* CityListViewController.swift */; };
+		9E81D3331F6B81030013BC25 /* CityListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9E81D3311F6B81030013BC25 /* CityListViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -42,6 +48,12 @@
 		9E2134C91F6A7AD900412B66 /* SettingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingViewController.swift; sourceTree = "<group>"; };
 		9E2134CB1F6A7B7600412B66 /* CTool.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CTool.swift; sourceTree = "<group>"; };
 		9E2134CE1F6A883300412B66 /* LittleAppSwiftPCH.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LittleAppSwiftPCH.swift; sourceTree = "<group>"; };
+		9E81D3251F6B6B010013BC25 /* LittlePlayerCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LittlePlayerCell.swift; sourceTree = "<group>"; };
+		9E81D3261F6B6B010013BC25 /* LittlePlayerCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LittlePlayerCell.xib; sourceTree = "<group>"; };
+		9E81D32B1F6B80210013BC25 /* SelectColorViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SelectColorViewController.swift; sourceTree = "<group>"; };
+		9E81D32C1F6B80210013BC25 /* SelectColorViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SelectColorViewController.xib; sourceTree = "<group>"; };
+		9E81D3301F6B81030013BC25 /* CityListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CityListViewController.swift; sourceTree = "<group>"; };
+		9E81D3311F6B81030013BC25 /* CityListViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CityListViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -122,6 +134,10 @@
 			isa = PBXGroup;
 			children = (
 				9E2134C11F6A7A6700412B66 /* LittlePlayerViewController.swift */,
+				9E81D3251F6B6B010013BC25 /* LittlePlayerCell.swift */,
+				9E81D3261F6B6B010013BC25 /* LittlePlayerCell.xib */,
+				9E81D32A1F6B7FFB0013BC25 /* 取色板 */,
+				9E81D32F1F6B80DC0013BC25 /* 城市列表 */,
 			);
 			name = "小玩意";
 			sourceTree = "<group>";
@@ -156,6 +172,24 @@
 				9E2134C91F6A7AD900412B66 /* SettingViewController.swift */,
 			);
 			name = "设置";
+			sourceTree = "<group>";
+		};
+		9E81D32A1F6B7FFB0013BC25 /* 取色板 */ = {
+			isa = PBXGroup;
+			children = (
+				9E81D32B1F6B80210013BC25 /* SelectColorViewController.swift */,
+				9E81D32C1F6B80210013BC25 /* SelectColorViewController.xib */,
+			);
+			name = "取色板";
+			sourceTree = "<group>";
+		};
+		9E81D32F1F6B80DC0013BC25 /* 城市列表 */ = {
+			isa = PBXGroup;
+			children = (
+				9E81D3301F6B81030013BC25 /* CityListViewController.swift */,
+				9E81D3311F6B81030013BC25 /* CityListViewController.xib */,
+			);
+			name = "城市列表";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -217,9 +251,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9E81D3281F6B6B010013BC25 /* LittlePlayerCell.xib in Resources */,
 				9E2134A91F6A780400412B66 /* LaunchScreen.storyboard in Resources */,
+				9E81D32E1F6B80210013BC25 /* SelectColorViewController.xib in Resources */,
 				9E2134A61F6A780400412B66 /* Assets.xcassets in Resources */,
 				9E2134A11F6A780400412B66 /* Main.storyboard in Resources */,
+				9E81D3331F6B81030013BC25 /* CityListViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -234,8 +271,11 @@
 				9E2134B51F6A789500412B66 /* BaseViewController.swift in Sources */,
 				9E2134C41F6A7A7800412B66 /* MusicViewController.swift in Sources */,
 				9E2134BB1F6A78E600412B66 /* BaseTabBarController.swift in Sources */,
+				9E81D3271F6B6B010013BC25 /* LittlePlayerCell.swift in Sources */,
 				9E21349C1F6A780400412B66 /* AppDelegate.swift in Sources */,
+				9E81D32D1F6B80210013BC25 /* SelectColorViewController.swift in Sources */,
 				9E2134B91F6A78CC00412B66 /* BaseNavgationController.swift in Sources */,
+				9E81D3321F6B81030013BC25 /* CityListViewController.swift in Sources */,
 				9E2134CA1F6A7AD900412B66 /* SettingViewController.swift in Sources */,
 				9E2134C81F6A7ACB00412B66 /* ExploreViewController.swift in Sources */,
 				9E2134C21F6A7A6700412B66 /* LittlePlayerViewController.swift in Sources */,
@@ -405,6 +445,7 @@
 				9E2134AF1F6A780400412B66 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 

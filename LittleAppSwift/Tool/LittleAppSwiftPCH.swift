@@ -13,3 +13,6 @@ import UIKit
 let Public_Color = UIColor.black
 
 // 屏幕大小
+let kScreenWidth = UIScreen.main.bounds.size.width
+let kScreenHeight = UIScreen.main.bounds.size.height
+		

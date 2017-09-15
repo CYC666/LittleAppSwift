@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12121" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" restorationIdentifier="LittlePlayerCell" reuseIdentifier="LittlePlayerCell" id="gTV-IL-0wX" customClass="LittlePlayerCell" customModule="LittleAppSwift" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="103" height="150"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="103" height="150"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Pmp-lb-mCD" userLabel="1:1的背景">
+                        <rect key="frame" x="2" y="2" width="99" height="99"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="timg" translatesAutoresizingMaskIntoConstraints="NO" id="SmL-zq-koJ" userLabel="固定80*80大，以背景为中心">
+                                <rect key="frame" x="19.5" y="19.5" width="60" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="60" id="poV-iF-nl6"/>
+                                    <constraint firstAttribute="height" constant="60" id="z1O-8r-W38"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="8"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="clipsToBounds" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="SmL-zq-koJ" firstAttribute="centerX" secondItem="Pmp-lb-mCD" secondAttribute="centerX" id="Ucg-vo-nfC"/>
+                            <constraint firstAttribute="width" secondItem="Pmp-lb-mCD" secondAttribute="height" id="a2h-SJ-z78"/>
+                            <constraint firstItem="SmL-zq-koJ" firstAttribute="centerY" secondItem="Pmp-lb-mCD" secondAttribute="centerY" id="ul5-uj-H1e"/>
+                        </constraints>
+                    </view>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="陈少煌" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CfV-yD-bmN">
+                        <rect key="frame" x="2" y="101" width="99" height="47"/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <color key="textColor" red="0.20000000300000001" green="0.20000000300000001" blue="0.20000000300000001" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+            </view>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="Pmp-lb-mCD" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="2" id="0Q5-D1-ZQi"/>
+                <constraint firstItem="CfV-yD-bmN" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="2" id="1ja-So-G7L"/>
+                <constraint firstItem="Pmp-lb-mCD" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="2" id="4BM-X6-feD"/>
+                <constraint firstAttribute="bottom" secondItem="CfV-yD-bmN" secondAttribute="bottom" constant="2" id="6nn-Sh-qHN"/>
+                <constraint firstItem="CfV-yD-bmN" firstAttribute="top" secondItem="Pmp-lb-mCD" secondAttribute="bottom" id="PHH-fe-4fp"/>
+                <constraint firstAttribute="trailing" secondItem="CfV-yD-bmN" secondAttribute="trailing" constant="2" id="cyb-P1-8Gn"/>
+                <constraint firstAttribute="trailing" secondItem="Pmp-lb-mCD" secondAttribute="trailing" constant="2" id="pP5-LJ-lMZ"/>
+            </constraints>
+            <size key="customSize" width="103" height="150"/>
+            <connections>
+                <outlet property="iconImageView" destination="SmL-zq-koJ" id="hdy-sd-JaW"/>
+                <outlet property="nameLabel" destination="CfV-yD-bmN" id="3i3-TW-Ib0"/>
+            </connections>
+            <point key="canvasLocation" x="-19.5" y="14"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="timg" width="450" height="450"/>
+    </resources>
+</document>
