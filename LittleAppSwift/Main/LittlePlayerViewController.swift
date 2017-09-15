@@ -13,7 +13,7 @@ import UIKit
 
 
 
-class LittlePlayerViewController: BaseViewController, UICollectionViewDelegate, UICollectionViewDataSource {
+class LittlePlayerViewController: BaseViewController, UICollectionViewDelegate, UICollectionViewDataSource, SelectColorViewControllerDelegate {
 
     // MARK:======================================属性===========================================
     
@@ -91,6 +91,7 @@ class LittlePlayerViewController: BaseViewController, UICollectionViewDelegate, 
         
         if cell.nameLabel.text == "取色板" {
             let ctrl = SelectColorViewController()
+            ctrl.delegate = self
             navigationController?.pushViewController(ctrl, animated: true)
             
         } else if cell.nameLabel.text == "城市列表" {
@@ -102,7 +103,10 @@ class LittlePlayerViewController: BaseViewController, UICollectionViewDelegate, 
         
     }
     
-    
+    // MARK:取色板的代理方法
+    func SelectColorViewControllerDone(R: CGFloat, G: CGFloat, B: CGFloat, A: CGFloat) {
+        print(R, G, B, A)
+    }
     
     
     
