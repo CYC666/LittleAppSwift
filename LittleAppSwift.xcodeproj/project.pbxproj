@@ -28,6 +28,13 @@
 		9E81D32E1F6B80210013BC25 /* SelectColorViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9E81D32C1F6B80210013BC25 /* SelectColorViewController.xib */; };
 		9E81D3321F6B81030013BC25 /* CityListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E81D3301F6B81030013BC25 /* CityListViewController.swift */; };
 		9E81D3331F6B81030013BC25 /* CityListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9E81D3311F6B81030013BC25 /* CityListViewController.xib */; };
+		9E81D3351F6BBF200013BC25 /* ProvincesAndCities.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9E81D3341F6BBF200013BC25 /* ProvincesAndCities.plist */; };
+		9E81D3381F6BC26B0013BC25 /* CityListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E81D3361F6BC26B0013BC25 /* CityListCell.swift */; };
+		9E81D3391F6BC26B0013BC25 /* CityListCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9E81D3371F6BC26B0013BC25 /* CityListCell.xib */; };
+		9E81D33C1F6BC8200013BC25 /* CityListModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E81D33B1F6BC8200013BC25 /* CityListModel.swift */; };
+		9E81D33E1F6BD6AA0013BC25 /* CityStateModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E81D33D1F6BD6AA0013BC25 /* CityStateModel.swift */; };
+		9E81D3421F6BE1050013BC25 /* CityListHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E81D3411F6BE1050013BC25 /* CityListHeader.swift */; };
+		9E81D3441F6BE13D0013BC25 /* CityListHeader.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9E81D3431F6BE13D0013BC25 /* CityListHeader.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -54,6 +61,13 @@
 		9E81D32C1F6B80210013BC25 /* SelectColorViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SelectColorViewController.xib; sourceTree = "<group>"; };
 		9E81D3301F6B81030013BC25 /* CityListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CityListViewController.swift; sourceTree = "<group>"; };
 		9E81D3311F6B81030013BC25 /* CityListViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CityListViewController.xib; sourceTree = "<group>"; };
+		9E81D3341F6BBF200013BC25 /* ProvincesAndCities.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = ProvincesAndCities.plist; sourceTree = "<group>"; };
+		9E81D3361F6BC26B0013BC25 /* CityListCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CityListCell.swift; sourceTree = "<group>"; };
+		9E81D3371F6BC26B0013BC25 /* CityListCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CityListCell.xib; sourceTree = "<group>"; };
+		9E81D33B1F6BC8200013BC25 /* CityListModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CityListModel.swift; sourceTree = "<group>"; };
+		9E81D33D1F6BD6AA0013BC25 /* CityStateModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CityStateModel.swift; sourceTree = "<group>"; };
+		9E81D3411F6BE1050013BC25 /* CityListHeader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CityListHeader.swift; sourceTree = "<group>"; };
+		9E81D3431F6BE13D0013BC25 /* CityListHeader.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CityListHeader.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -186,8 +200,15 @@
 		9E81D32F1F6B80DC0013BC25 /* 城市列表 */ = {
 			isa = PBXGroup;
 			children = (
+				9E81D3341F6BBF200013BC25 /* ProvincesAndCities.plist */,
 				9E81D3301F6B81030013BC25 /* CityListViewController.swift */,
 				9E81D3311F6B81030013BC25 /* CityListViewController.xib */,
+				9E81D3411F6BE1050013BC25 /* CityListHeader.swift */,
+				9E81D3431F6BE13D0013BC25 /* CityListHeader.xib */,
+				9E81D3361F6BC26B0013BC25 /* CityListCell.swift */,
+				9E81D3371F6BC26B0013BC25 /* CityListCell.xib */,
+				9E81D33B1F6BC8200013BC25 /* CityListModel.swift */,
+				9E81D33D1F6BD6AA0013BC25 /* CityStateModel.swift */,
 			);
 			name = "城市列表";
 			sourceTree = "<group>";
@@ -252,10 +273,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				9E81D3281F6B6B010013BC25 /* LittlePlayerCell.xib in Resources */,
+				9E81D3351F6BBF200013BC25 /* ProvincesAndCities.plist in Resources */,
 				9E2134A91F6A780400412B66 /* LaunchScreen.storyboard in Resources */,
 				9E81D32E1F6B80210013BC25 /* SelectColorViewController.xib in Resources */,
+				9E81D3441F6BE13D0013BC25 /* CityListHeader.xib in Resources */,
 				9E2134A61F6A780400412B66 /* Assets.xcassets in Resources */,
 				9E2134A11F6A780400412B66 /* Main.storyboard in Resources */,
+				9E81D3391F6BC26B0013BC25 /* CityListCell.xib in Resources */,
 				9E81D3331F6B81030013BC25 /* CityListViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -267,8 +291,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9E81D33E1F6BD6AA0013BC25 /* CityStateModel.swift in Sources */,
 				9E2134CC1F6A7B7600412B66 /* CTool.swift in Sources */,
 				9E2134B51F6A789500412B66 /* BaseViewController.swift in Sources */,
+				9E81D3381F6BC26B0013BC25 /* CityListCell.swift in Sources */,
 				9E2134C41F6A7A7800412B66 /* MusicViewController.swift in Sources */,
 				9E2134BB1F6A78E600412B66 /* BaseTabBarController.swift in Sources */,
 				9E81D3271F6B6B010013BC25 /* LittlePlayerCell.swift in Sources */,
@@ -277,6 +303,8 @@
 				9E2134B91F6A78CC00412B66 /* BaseNavgationController.swift in Sources */,
 				9E81D3321F6B81030013BC25 /* CityListViewController.swift in Sources */,
 				9E2134CA1F6A7AD900412B66 /* SettingViewController.swift in Sources */,
+				9E81D33C1F6BC8200013BC25 /* CityListModel.swift in Sources */,
+				9E81D3421F6BE1050013BC25 /* CityListHeader.swift in Sources */,
 				9E2134C81F6A7ACB00412B66 /* ExploreViewController.swift in Sources */,
 				9E2134C21F6A7A6700412B66 /* LittlePlayerViewController.swift in Sources */,
 				9E2134CF1F6A883300412B66 /* LittleAppSwiftPCH.swift in Sources */,

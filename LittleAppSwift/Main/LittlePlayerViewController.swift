@@ -48,7 +48,6 @@ class LittlePlayerViewController: BaseViewController, UICollectionViewDelegate, 
         mainCollectionView?.register(UINib(nibName: "LittlePlayerCell", bundle:Bundle.main), forCellWithReuseIdentifier: "LittlePlayerCell")
         mainCollectionView?.delegate = self
         mainCollectionView?.dataSource = self
-        
         view.addSubview(mainCollectionView!)
         
     }
