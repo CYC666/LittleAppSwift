@@ -13,9 +13,11 @@ class CityListHeader: UITableViewHeaderFooterView {
     
     // MARK:======================================属性========================================
     
-    @IBOutlet weak var nameLabel: UILabel!
+    @IBOutlet weak var nameLabel: UILabel!      // 标题
     
+    @IBOutlet weak var headerButton: UIButton!  // 按钮
     
+    @IBOutlet weak var downImage: UIImageView!  // 白色三角
     
 
 }

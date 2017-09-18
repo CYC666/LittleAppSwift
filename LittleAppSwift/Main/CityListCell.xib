@@ -19,17 +19,19 @@
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3aQ-ac-QKC">
-                        <rect key="frame" x="15" y="17.5" width="42" height="20.5"/>
+                        <rect key="frame" x="20" y="17.5" width="42" height="20.5"/>
                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                         <color key="textColor" red="0.20000000300000001" green="0.20000000300000001" blue="0.20000000300000001" alpha="1" colorSpace="calibratedRGB"/>
                         <nil key="highlightedColor"/>
                     </label>
                 </subviews>
+                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                 <constraints>
                     <constraint firstItem="3aQ-ac-QKC" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="COd-wc-SUt"/>
-                    <constraint firstItem="3aQ-ac-QKC" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="15" id="VBX-45-Hli"/>
+                    <constraint firstItem="3aQ-ac-QKC" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" id="VBX-45-Hli"/>
                 </constraints>
             </tableViewCellContentView>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
             <connections>
                 <outlet property="nameLabel" destination="3aQ-ac-QKC" id="UCF-la-SN0"/>
             </connections>

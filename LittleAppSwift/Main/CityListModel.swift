@@ -16,8 +16,8 @@ class CityListModel: NSObject {
     
     // MARK:======================================属性========================================
     var city : String!
-    var lon : String!
-    var lat : String!
+    var lon : NSNumber!
+    var lat : NSNumber!
 
     
     

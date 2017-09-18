@@ -25,10 +25,10 @@ class CityListViewController: BaseViewController, UITableViewDelegate, UITableVi
         super.viewDidLoad()
 
         title = "城市列表"
+        view.backgroundColor = .black
         
-        listTableView = UITableView(frame: CGRect(x: 0, y: 64, width: kScreenWidth, height: kScreenHeight - 64), style: UITableViewStyle.plain)
+        listTableView = UITableView(frame: CGRect(x: 0, y: 0, width: kScreenWidth, height: kScreenHeight), style: UITableViewStyle.plain)
         listTableView.tableFooterView = UIView(frame: CGRect(x: 0, y: 0, width: 0, height: 0))
-        listTableView.separatorStyle = UITableViewCellSeparatorStyle.none
         listTableView.backgroundColor = UIColor.white
         listTableView.register(UINib(nibName: "CityListCell", bundle: Bundle.main), forCellReuseIdentifier: "CityListCell")
         listTableView.register(UINib(nibName: "CityListHeader", bundle: Bundle.main), forHeaderFooterViewReuseIdentifier: "CityListHeader")
@@ -55,21 +55,22 @@ class CityListViewController: BaseViewController, UITableViewDelegate, UITableVi
             stateModel.State = dic["State"] as! String
             stateModel.isShow = false
             
-            let Citys = dic["Citys"] as! NSArray
+            let Citys = dic["Cities"] as! NSArray
             var mCitys = [CityListModel]()
             
             // 城市
             for j in 0..<Citys.count {
-                let dict = Citys[j] as! NSDictionary
+                let dict = Citys[j] as! [String : Any]
                 let model = CityListModel()
                 model.city = dict["city"] as! String
-                model.lon = dict["lon"] as! String
-                model.lat = dict["lat"] as! String
+                model.lon = dict["lon"] as! NSNumber
+                model.lat = dict["lat"] as! NSNumber
                 
                 mCitys.append(model)
             }
-            stateModel.Cities = mCitys as NSArray
+            stateModel.Cities = mCitys as [CityListModel]
             
+            cityArray.append(stateModel)
             
         }
         
@@ -77,6 +78,25 @@ class CityListViewController: BaseViewController, UITableViewDelegate, UITableVi
         listTableView.reloadData()
     }
     
+    // MARK:======================================动作相应========================================
+    // MARK:点击头部
+    func didSelectHeader(button : UIButton) {
+        
+        let index = button.tag as Int
+        
+        let stateModel = cityArray[index] as CityStateModel
+        
+        if stateModel.isShow {
+            // 已经展开就收起
+            stateModel.isShow = false
+        } else {
+            // 收起状态则展开
+            stateModel.isShow = true
+        }
+        
+        // 按组去刷新表视图，携带动画
+        listTableView.reloadSections(IndexSet(integer: index), with: UITableViewRowAnimation.fade)
+    }
     
     // MARK:======================================代理方法========================================
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -101,7 +121,7 @@ class CityListViewController: BaseViewController, UITableViewDelegate, UITableVi
     }
     
     func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
-        return 25.0
+        return 30.0
     }
     
     func tableView(_ tableView: UITableView, heightForFooterInSection section: Int) -> CGFloat {
@@ -117,6 +137,16 @@ class CityListViewController: BaseViewController, UITableViewDelegate, UITableVi
         let cityStateModel = cityArray[section] as CityStateModel
         
         view.nameLabel.text = cityStateModel.State
+        view.headerButton.tag = section
+        view.headerButton.addTarget(self, action: #selector(didSelectHeader(button:)), for: UIControlEvents.touchUpInside)
+        
+        UIView.animate(withDuration: 0.2) { 
+            if cityStateModel.isShow {
+                view.downImage.transform = CGAffineTransform.init(rotationAngle: CGFloat.pi / 2)
+            } else {
+                view.downImage.transform = CGAffineTransform.init(rotationAngle: 0)
+            }
+        }
         
         return view
     }
@@ -130,6 +160,13 @@ class CityListViewController: BaseViewController, UITableViewDelegate, UITableVi
         let cityListModel = cityStateModel.Cities[indexPath.row] as CityListModel
         
         cell.nameLabel.text = cityListModel.city
+        
+        // 控制分割线
+        if indexPath.row == cityStateModel.Cities.count - 1 {
+            cell.separatorInset = UIEdgeInsets(top: 0, left: 0, bottom: 0, right: 0)
+        } else {
+            cell.separatorInset = UIEdgeInsets(top: 0, left: 15, bottom: 0, right: 0)
+        }
         
         return cell
         
