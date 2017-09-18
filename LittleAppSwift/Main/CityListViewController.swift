@@ -37,13 +37,17 @@ class CityListViewController: BaseViewController, UITableViewDelegate, UITableVi
         view.addSubview(listTableView)
         
         // 加载城市列表
-        loadCityData()
+        loadCityData {
+            
+            // 刷新表视图
+            listTableView.reloadData()
+        }
         
     }
 
     // MARK:======================================私有方法========================================
     // MARK:加载城市plist文件
-    func loadCityData() {
+    func loadCityData(completion : () -> ()) {
         
         let path = Bundle.main.path(forResource: "ProvincesAndCities", ofType: "plist")
         let tempArray = NSArray(contentsOfFile: path!)
@@ -74,8 +78,8 @@ class CityListViewController: BaseViewController, UITableViewDelegate, UITableVi
             
         }
         
-        // 刷新表视图
-        listTableView.reloadData()
+        // 完成后执行block,闭包
+        completion()
     }
     
     // MARK:======================================动作相应========================================

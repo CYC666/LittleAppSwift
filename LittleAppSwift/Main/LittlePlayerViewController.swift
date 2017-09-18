@@ -31,8 +31,11 @@ class LittlePlayerViewController: BaseViewController, UICollectionViewDelegate, 
         
         // 创建子视图
         creatSubView()
+        
     }
+    
 
+    
     // MARK:======================================私有方法========================================
     
     // MARK:创建子视图
@@ -106,13 +109,7 @@ class LittlePlayerViewController: BaseViewController, UICollectionViewDelegate, 
     func SelectColorViewControllerDone(R: CGFloat, G: CGFloat, B: CGFloat, A: CGFloat) {
         print(R, G, B, A)
     }
-    
-    
-    
-    
-    
-    
-    
+
     
     
     
