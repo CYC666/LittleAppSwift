@@ -1,6 +1,8 @@
 platform :ios, '8.0'
+use_frameworks!
+
 target 'LittleAppSwift' do
-pod 'AFNetworking'
-pod 'YYKit'
+    pod 'Alamofire'
+    pod 'YYKit'
 end
 

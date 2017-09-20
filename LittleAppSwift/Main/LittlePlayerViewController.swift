@@ -10,7 +10,7 @@
 // 显示一个菜单列表，点击进入对应菜单下的功能
 
 import UIKit
-
+import Alamofire
 
 
 class LittlePlayerViewController: BaseViewController, UICollectionViewDelegate, UICollectionViewDataSource, SelectColorViewControllerDelegate {
@@ -31,6 +31,21 @@ class LittlePlayerViewController: BaseViewController, UICollectionViewDelegate, 
         
         // 创建子视图
         creatSubView()
+        
+        CTool().loadWeatherWithLocation(location: "深圳", success: { (respond) in
+            
+        }) { (error) in
+            
+        }
+        
+        
+//        Alamofire.request("http://rapapi.org/mockjsdata/25204/get").responseJSON { (response) in
+//            if let data = response.data, let utf8Text = String(data: data, encoding: .utf8) {
+//                print("Data: \(utf8Text)")
+//            }
+//        }
+        
+        
         
     }
     
@@ -54,6 +69,11 @@ class LittlePlayerViewController: BaseViewController, UICollectionViewDelegate, 
         view.addSubview(mainCollectionView!)
         
     }
+    
+    // MARK:======================================网络请求========================================
+
+        
+        
     
     
     // MARK:======================================代理方法========================================

@@ -1,0 +1,6 @@
+framework module Pods_LittleAppSwift {
+  umbrella header "Pods-LittleAppSwift-umbrella.h"
+
+  export *
+  module * { export * }
+}

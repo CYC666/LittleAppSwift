@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		788D1BCA82E58F72982E0A17 /* libPods-LittleAppSwift.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 237B2557385C2D7B12AC624B /* libPods-LittleAppSwift.a */; };
 		9E21349C1F6A780400412B66 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E21349B1F6A780400412B66 /* AppDelegate.swift */; };
 		9E2134A11F6A780400412B66 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9E21349F1F6A780400412B66 /* Main.storyboard */; };
 		9E2134A41F6A780400412B66 /* LittleAppSwift.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 9E2134A21F6A780400412B66 /* LittleAppSwift.xcdatamodeld */; };
@@ -36,11 +35,11 @@
 		9E81D33E1F6BD6AA0013BC25 /* CityStateModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E81D33D1F6BD6AA0013BC25 /* CityStateModel.swift */; };
 		9E81D3421F6BE1050013BC25 /* CityListHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E81D3411F6BE1050013BC25 /* CityListHeader.swift */; };
 		9E81D3441F6BE13D0013BC25 /* CityListHeader.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9E81D3431F6BE13D0013BC25 /* CityListHeader.xib */; };
+		F93EB2CF7DAA82C9E6DBBFD1 /* Pods_LittleAppSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DF1841ED3C0314704298CBA1 /* Pods_LittleAppSwift.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		2112BF506F8F8ED37B00D5DC /* Pods-LittleAppSwift.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LittleAppSwift.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LittleAppSwift/Pods-LittleAppSwift.debug.xcconfig"; sourceTree = "<group>"; };
-		237B2557385C2D7B12AC624B /* libPods-LittleAppSwift.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-LittleAppSwift.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9E2134981F6A780400412B66 /* LittleAppSwift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LittleAppSwift.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9E21349B1F6A780400412B66 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9E2134A01F6A780400412B66 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -58,6 +57,7 @@
 		9E2134C91F6A7AD900412B66 /* SettingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingViewController.swift; sourceTree = "<group>"; };
 		9E2134CB1F6A7B7600412B66 /* CTool.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CTool.swift; sourceTree = "<group>"; };
 		9E2134CE1F6A883300412B66 /* LittleAppSwiftPCH.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LittleAppSwiftPCH.swift; sourceTree = "<group>"; };
+		9E6363C51F70BA1B0052A3CE /* LittleAppSwift-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "LittleAppSwift-Bridging-Header.h"; sourceTree = "<group>"; };
 		9E81D3251F6B6B010013BC25 /* LittlePlayerCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LittlePlayerCell.swift; sourceTree = "<group>"; };
 		9E81D3261F6B6B010013BC25 /* LittlePlayerCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LittlePlayerCell.xib; sourceTree = "<group>"; };
 		9E81D32B1F6B80210013BC25 /* SelectColorViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SelectColorViewController.swift; sourceTree = "<group>"; };
@@ -71,6 +71,7 @@
 		9E81D33D1F6BD6AA0013BC25 /* CityStateModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CityStateModel.swift; sourceTree = "<group>"; };
 		9E81D3411F6BE1050013BC25 /* CityListHeader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CityListHeader.swift; sourceTree = "<group>"; };
 		9E81D3431F6BE13D0013BC25 /* CityListHeader.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CityListHeader.xib; sourceTree = "<group>"; };
+		DF1841ED3C0314704298CBA1 /* Pods_LittleAppSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LittleAppSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F8EAC67356D62212677FB915 /* Pods-LittleAppSwift.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LittleAppSwift.release.xcconfig"; path = "Pods/Target Support Files/Pods-LittleAppSwift/Pods-LittleAppSwift.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -79,7 +80,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				788D1BCA82E58F72982E0A17 /* libPods-LittleAppSwift.a in Frameworks */,
+				F93EB2CF7DAA82C9E6DBBFD1 /* Pods_LittleAppSwift.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -156,6 +157,7 @@
 			children = (
 				9E2134CB1F6A7B7600412B66 /* CTool.swift */,
 				9E2134CE1F6A883300412B66 /* LittleAppSwiftPCH.swift */,
+				9E6363C51F70BA1B0052A3CE /* LittleAppSwift-Bridging-Header.h */,
 			);
 			path = Tool;
 			sourceTree = "<group>";
@@ -232,7 +234,7 @@
 		F98F96728FF7D69B868EF207 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				237B2557385C2D7B12AC624B /* libPods-LittleAppSwift.a */,
+				DF1841ED3C0314704298CBA1 /* Pods_LittleAppSwift.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -272,6 +274,7 @@
 				TargetAttributes = {
 					9E2134971F6A780400412B66 = {
 						CreatedOnToolsVersion = 8.3.3;
+						LastSwiftMigration = 0830;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -320,9 +323,14 @@
 			files = (
 			);
 			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-LittleAppSwift/Pods-LittleAppSwift-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/YYKit/YYKit.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/YYKit.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -511,12 +519,16 @@
 			baseConfigurationReference = 2112BF506F8F8ED37B00D5DC /* Pods-LittleAppSwift.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = LittleAppSwift/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = CYC666.LittleAppSwift;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "LittleAppSwift/Tool/LittleAppSwift-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
+				USER_HEADER_SEARCH_PATHS = "$(PODS_ROOT)/**";
 			};
 			name = Debug;
 		};
@@ -525,12 +537,15 @@
 			baseConfigurationReference = F8EAC67356D62212677FB915 /* Pods-LittleAppSwift.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = LittleAppSwift/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = CYC666.LittleAppSwift;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "LittleAppSwift/Tool/LittleAppSwift-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
+				USER_HEADER_SEARCH_PATHS = "$(PODS_ROOT)/**";
 			};
 			name = Release;
 		};
